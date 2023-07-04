@@ -86,7 +86,7 @@ const design = (
                 </div>
                 <div className="col-12 text-center mt-4">
                   <a
-                    href="/#"
+                    href="/login"
                     title=""
                     className="btn btn-sm btn-block btn-primary lift"
                   >
@@ -95,7 +95,7 @@ const design = (
                 </div>
                 <div className="col-12 text-center mt-4">
                   <span className="text-muted">
-                    Haven't received it? <a href="#">Resend a new code.</a>
+                    Haven't received it? <a href="/auto_two_step#">Resend a new code.</a>
                   </span>
                 </div>
               </form>

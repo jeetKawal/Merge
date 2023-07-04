@@ -21,8 +21,8 @@ const MainContent = () => {
   else if (path === '/auto_two_step') {
     return <Auto_two_step />;
   }
-  else if (path === '/#') {
-    return <Login/>;
+  else if (path === '/auto_two_step#') {
+    return <Auto_two_step/>;
   }
   else {
     return <Error/>;
