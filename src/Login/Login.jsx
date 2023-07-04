@@ -1,4 +1,6 @@
 import React from "react";
+import ForgetPassword from "./ForgetPassword";
+import { Link } from "react-router-dom";
 const Login = () =>{
     const design =(
         <>
@@ -59,7 +61,7 @@ const Login = () =>{
                     />
                     <div className="form-label text-end pt-2">
                       <span className="justify-content-between">
-                        <a href="forgot_password.html">Forgot Password?</a>
+                       <Link to="/forgotPassword">{<ForgetPassword/>}</Link>
                       </span>
                     </div>
                   </div>
