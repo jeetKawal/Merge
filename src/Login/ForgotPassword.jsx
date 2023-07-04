@@ -68,7 +68,7 @@ const ForgotPassword=()=>{
                       </div>
                       <div className="col-12 mt-4">
                         <a
-                          href="auth-two-step.html"
+                          href="/auto_two_step"
                           title=""
                           className="btn btn-lg btn-block btn-primary lift px-3"
                         >
@@ -77,7 +77,7 @@ const ForgotPassword=()=>{
                       </div>
                       <div className="col-12 mt-4">
                         <span className="text-muted">
-                          <a href="login.html">Back to Sign in</a>
+                          <a href="/login">Back to Sign in</a>
                         </span>
                       </div>
                     </form>
