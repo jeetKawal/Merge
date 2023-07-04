@@ -86,7 +86,7 @@ const design = (
                 </div>
                 <div className="col-12 text-center mt-4">
                   <a
-                    href="login.html"
+                    href="/#"
                     title=""
                     className="btn btn-sm btn-block btn-primary lift"
                   >

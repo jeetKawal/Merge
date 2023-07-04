@@ -1,5 +1,4 @@
 import React from "react";
-import ForgetPassword from "./ForgetPassword";
 import { Link } from "react-router-dom";
 const Login = () =>{
     const design =(
@@ -61,7 +60,9 @@ const Login = () =>{
                     />
                     <div className="form-label text-end pt-2">
                       <span className="justify-content-between">
-                       <Link to="/forgotPassword">{<ForgetPassword/>}</Link>
+                       {/* <Link to="/forgotPassword">ForgotPassword</Link> */}
+                       <a href="/forgotpassword">Forgot Password</a>
+
                       </span>
                     </div>
                   </div>
@@ -129,7 +130,7 @@ const Login = () =>{
                 <div className="col-12 mt-4">
                   <span className="text-muted">
                     Don't have an account yet?{" "}
-                    <a href="Signup.html">Sign up here</a>
+                    <a href="/signup">Sign up here</a>
                   </span>
                 </div>
               </form>

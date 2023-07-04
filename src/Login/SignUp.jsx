@@ -105,7 +105,7 @@ const SignUp =()=>{
                 <div className="col-lg-12 col-md-12 mt-4">
                   <a
                     className="btn btn-sm btn-block btn-primary lift px-3"
-                    href="auth-two-step.html"
+                    href="/auto_two_step"
                     title=""
                   >
                     Verify

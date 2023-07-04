@@ -1,5 +1,5 @@
 import React from "react";
-const ForgetPassword=()=>{
+const ForgotPassword=()=>{
     const design =(
         <>
         <meta charSet="utf-8" />
@@ -96,4 +96,4 @@ const ForgetPassword=()=>{
     );
     return design;
 }
-export default ForgetPassword;
+export default ForgotPassword;
