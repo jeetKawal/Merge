@@ -1,8 +1,9 @@
-import React from "react";
-import LoginForm from "./LoginForm";
-const Login = () =>{
-    const design =(
-        <>
+
+import React from "react"
+import SignUpForm from "./SignUpForm";
+const SignUp =()=>{
+    const design = (
+<>
   {/* start: body area */}
   <div className="wrapper">
     {/* start: page body */}
@@ -24,7 +25,7 @@ const Login = () =>{
               style={{ maxWidth: "32rem" }}
             >
               {/* Form */}
-              <LoginForm/>
+             <SignUpForm/>
               {/* End Form */}
             </div>
           </div>
@@ -38,4 +39,4 @@ const Login = () =>{
     );
     return design;
 }
-export default Login;
+export default SignUp;
