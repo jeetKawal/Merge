@@ -5,8 +5,14 @@ import Login from "../Login/Login";
 import ForgotPassword from "../Login/ForgotPassword";
 
 import Auto_two_step from "../Login/Auto_two_step";
-import{BrowserRouter,Routes,Route}from "react-router-dom";
+import{Routes,Route}from "react-router-dom";
 import MainContent from "../Component/MainContent";
+import ManagerDashboard from "../ManagerComponent/ManagerDashboard";
+import ManagerLeave from "../ManagerComponent/ManagerLeave";
+import ManagerAttendance from "../ManagerComponent/ManagerAttendance";
+import ManagerExpense from "../ManagerComponent/ManagerExpense";
+import ManagerAlert from "../ManagerComponent/ManagerAlert";
+
 import HRDashboard from "../HRComponent/MainHrComponent/Dashboard/HRDashboard";
 import HRAttendance from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAttendance";
 import HREmployeeStatus from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/HREmployeeStatus";
@@ -26,6 +32,12 @@ const PageRouting =()=>{
       <Route path="/forgotpassword" component={ForgotPassword}/>
       <Route path="/auto_two_step" component={Auto_two_step}/>
       <Route path="/auto_two_step#" component={Auto_two_step}/>
+      <Route path="/managerdashboard" component={ManagerDashboard}/>
+      <Route path="/managerleave" component={ManagerLeave}/>
+      <Route path="/managerattendance" component={ManagerAttendance}/>
+      <Route path="/managerexpense" component={ManagerExpense}/>
+      <Route path="/manageralert" component={ManagerAlert}/>
+
 
       {/* HR Routes */}
       <Route path="/hr_dashboard" component={HRDashboard}/>

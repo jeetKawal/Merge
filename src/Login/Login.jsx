@@ -106,7 +106,7 @@ const Login = () =>{
                   </a>
                   <a
                     className="btn btn-sm btn-block btn-primary lift px-2"
-                    href="mngr_dashboard.html"
+                    href="/managerdashboard"
                     title=""
                   >
                     Manager
