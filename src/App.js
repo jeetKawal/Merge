@@ -2,10 +2,11 @@ import React from "react";
 import PageRouting from "./Routes/PageRouting";
 
 
+
 function App() {
   return (
    <>
-   <PageRouting/>
+  <PageRouting/>
    
    </>
   );
