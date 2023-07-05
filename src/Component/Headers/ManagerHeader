@@ -1,8 +1,6 @@
-
-import React from "react";
-const Header =()=>{
-    const design = (
-<>
+const ManagerHeader =()=>{
+    const design =(
+        <>
   {/* start: link */}
   <ul className="header-right col-lg-12 justify-content-end d-flex align-items-center mb-0">
     {/* start: notifications dropdown-menu */}
@@ -14,7 +12,7 @@ const Header =()=>{
           role="button"
           data-bs-toggle="dropdown"
         >
-          <span className="d-none d-xl-block me-2">Alerts</span>
+          <span className="d-none d-xl-block me-2 text-center">Alerts</span>
           <svg
             className="d-inline-block d-xl-none"
             viewBox="0 0 16 16"
@@ -70,7 +68,7 @@ const Header =()=>{
                       </div>
                     </a>
                   </li>
-                  <li className="py-2">
+                  <li className="py-2 mb-1 border-bottom">
                     <a href="javascript:void(0);" className="d-flex">
                       <div className="avatar rounded-circle no-thumbnail">
                         <i className="fa fa-clock-o fa-lg" />
@@ -84,11 +82,25 @@ const Header =()=>{
                       </div>
                     </a>
                   </li>
+                  <li className="py-2">
+                    <a href="javascript:void(0);" className="d-flex">
+                      <div className="avatar rounded-circle no-thumbnail">
+                        <i className="fa fa-sign-out fa-lg" />
+                      </div>
+                      <div className="flex-fill ms-3">
+                        <p className="d-flex justify-content-between mb-0">
+                          <span>Separation</span>
+                          <small>1HR</small>
+                        </p>
+                        <span>You got a separation reuqest.</span>
+                      </div>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
             <a
-              href="emp_alerts.html"
+              href="mngr_alerts.html"
               className="btn btn-primary text-light rounded-0"
             >
               View all alerts
@@ -111,12 +123,12 @@ const Header =()=>{
         </a>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="mngr_dashboard.html">
               Team view
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="dashboard.html">
               My view
             </a>
           </li>
@@ -184,9 +196,8 @@ const Header =()=>{
     </li>
     {/* start: Settings toggle modal */}
   </ul>
-
 </>
-);
-return design;
+    );
+    return design;
 }
-export default Header;
+export default ManagerHeader;
