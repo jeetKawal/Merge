@@ -2,7 +2,7 @@ import React from "react";
 const ForgotPassword=()=>{
     const design =(
         <>
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
         <meta
           name="viewport"
@@ -11,10 +11,9 @@ const ForgotPassword=()=>{
         <meta name="description" content="" />
         <meta name="keyword" content="" />
         <title>Mynd: Forgot password</title>
-        <link rel="icon" href="favicon.ico" alt="Mynd" /> {/* Favicon*/}
-        {/* project css file  */}
+        <link rel="icon" href="favicon.ico" alt="Mynd" /> 
         <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-        <link rel="stylesheet" href="assets/css/custom.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" /> */}
         {/* start: body area */}
         <div className="wrapper">
           {/* start: page body */}

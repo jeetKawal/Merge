@@ -13,6 +13,14 @@ import ManagerAttendance from "../ManagerComponent/ManagerAttendance";
 import ManagerExpense from "../ManagerComponent/ManagerExpense";
 import ManagerAlert from "../ManagerComponent/ManagerAlert";
 
+import HRDashboard from "../HRComponent/MainHrComponent/Dashboard/HRDashboard";
+import HRAttendance from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAttendance";
+import HREmployeeStatus from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/HREmployeeStatus";
+import HRSepration from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRSepration";
+import HRExpenses from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRExpenses";
+import HRLeaves from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRLeaves";
+import HRAlerts from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts";
+import Profiledetails from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails";
 
 const PageRouting =()=>{
     const design =(
@@ -29,6 +37,20 @@ const PageRouting =()=>{
       <Route path="/managerattendance" component={ManagerAttendance}/>
       <Route path="/managerexpense" component={ManagerExpense}/>
       <Route path="/manageralert" component={ManagerAlert}/>
+
+
+      {/* HR Routes */}
+      <Route path="/hr_dashboard" component={HRDashboard}/>
+      <Route path="/hr_emp_status" component={HREmployeeStatus}/>
+      <Route path="/hr_sep_dash" component={HRSepration}/>
+      <Route path="/hr_attendance" component={HRAttendance}/>
+      <Route path="/hr_expense" component={HRExpenses}/>
+      <Route path="/hr_leaves" component={HRLeaves}/>
+      <Route path="/hr_alerts" component={HRAlerts}/>
+      <Route path="/profile_detailed" component={Profiledetails}/>
+
+      
+
 
       </Routes>
       </>
