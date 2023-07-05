@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Login = () =>{
     const design =(
         <>
-  <meta charSet="utf-8" />
+  {/* <meta charSet="utf-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
   <meta
     name="viewport"
@@ -12,10 +12,9 @@ const Login = () =>{
   <meta name="description" content="" />
   <meta name="keyword" content="" />
   <title>Mynd: Sign in</title>
-  <link rel="icon" href="favicon.ico" alt="Mynd" /> {/* Favicon*/}
-  {/* project css file  */}
+  <link rel="icon" href="favicon.ico" alt="Mynd" /> 
   <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" /> */}
   {/* start: body area */}
   <div className="wrapper">
     {/* start: page body */}
@@ -121,7 +120,7 @@ const Login = () =>{
                   </a>
                   <a
                     className="btn btn-sm btn-block btn-primary lift px-2"
-                    href="hr_dashboard.html"
+                    href="/hr_dashboard"
                     title=""
                   >
                     HR
