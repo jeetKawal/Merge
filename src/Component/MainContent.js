@@ -10,7 +10,7 @@ import ManagerAttendance from '../ManagerComponent/ManagerAttendance'
 import ManagerExpense from '../ManagerComponent/ManagerExpense';
 import ManagerAlert from '../ManagerComponent/ManagerAlert';
 import ManagerHeader from './Headers/ManagerHeader';
-import HRDashboard from '../HRComponent/MainHrComponent/Dashboard/HRDashboard';
+import HRDashboard from '../HRComponent/MainHrComponent/Dashboard/HRDashboard/HRDashboard';
 import HRAttendance from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAttendance';
 import HREmployeeStatus from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/HREmployeeStatus';
 import HRSepration from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRSepration';
@@ -18,6 +18,7 @@ import HRExpenses from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/
 import HRLeaves from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRLeaves';
 import HRAlerts from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts';
 import Profiledetails from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails';
+import Header from './Headers/Header';
 
 const MainContent = () => {
   const path = window.location.pathname;
@@ -75,6 +76,9 @@ const MainContent = () => {
   }
   else if (path === '/profile_detailed'){
     return <Profiledetails/>
+  }
+  else if (path === '/header'){
+    return <Header/>
   }
   else {
     return <Error/>;
