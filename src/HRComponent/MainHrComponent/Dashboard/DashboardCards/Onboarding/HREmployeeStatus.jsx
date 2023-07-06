@@ -1,12 +1,15 @@
 import React  from "react";
 import HrHeader from "../../../../../Component/Headers/HrHeader";
 import Footer from "../../../../../Component/Footer/Footer"
+import HrSideBar from "../../../../../Component/SideBar/HrSideBar";
 const HREmployeeStatus=()=>{
     return(
         <>
       
         {/* start: sidebar */}
-        <div w3-include-html="include/hr_sidebar.html" />
+       <div>
+        <HrSideBar/>
+       </div>
         {/* start: body area */}
         <div className="wrapper" style={{ overflowY: "scroll" }}>
           {/* start: page header */}
