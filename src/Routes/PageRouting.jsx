@@ -11,7 +11,7 @@ import ManagerDashboard from "../ManagerComponent/ManagerDashboard/ManagerDashbo
 import ManagerLeave from "../ManagerComponent/ManagerLeave";
 import ManagerAttendance from "../ManagerComponent/ManagerAttendance";
 import ManagerExpense from "../ManagerComponent/ManagerExpense";
-import ManagerAlert from "../ManagerComponent/ManagerAlert";
+import ManagerAlert from "../ManagerComponent/ManagerAlert/ManagerAlert";
 
 import HRDashboard from "../HRComponent/MainHrComponent/Dashboard/HRDashboard";
 import HRAttendance from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAttendance";
@@ -21,6 +21,7 @@ import HRExpenses from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/
 import HRLeaves from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRLeaves";
 import HRAlerts from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts";
 import Profiledetails from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails";
+import Header from "../Component/Headers/Header";
 
 const PageRouting =()=>{
     const design =(

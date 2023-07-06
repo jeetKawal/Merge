@@ -5,22 +5,6 @@ import ManagerHeader from "../Component/Headers/ManagerHeader";
 const ManagerExpense =()=>{
     const design =(
         <>
-  <meta charSet="utf-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content="" />
-  <meta name="keyword" content="" />
-  <title>:: HRIS :: Expenses</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" /> {/* Favicon*/}
-  {/* plugin css file  */}
-  <link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
-  <link rel="stylesheet" href="assets/css/dataTables.min.css" />
-  {/* project css file  */}
-  <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
   {/* start: sidebar */}
   <div w3-include-html="include/mngr_sidebar.html" />
   {/* start: body area */}

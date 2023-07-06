@@ -10,6 +10,7 @@ import ManagerDashboardExpense from "./Card/ManangerDashboardExpense";
 import ManagerDashboardLeaves from "./Card/ManagerDashboardLeaves";
 import ManagerDashboardLeaveStatus from "./Card/ManangerDashboardLeaveStatus";
 import ManagerDashboardAlerts from "./Card/ManagerDashboardAlerts";
+import ManagerHeader from "../../Component/Headers/ManagerHeader";
 const ManagerDashboard=()=>{
     const design= (
         <>
@@ -33,7 +34,9 @@ const ManagerDashboard=()=>{
            <ManagerDashboardSlideDown/>
           </div>
           {/* start: search area */}
-          <div w3-include-html={<Header/>} />
+          <div>
+            <ManagerHeader/>
+          </div>
         </nav>
       </div>
     </header>
@@ -196,8 +199,10 @@ const ManagerDashboard=()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html={<Footer/>} />
-  </div>
+    <div>
+      <Footer/>
+      </div>
+      </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}
   {/* Jquery Page Js */}
