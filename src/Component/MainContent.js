@@ -8,7 +8,7 @@ import ManagerDashboard from '../ManagerComponent/ManagerDashboard/ManagerDashbo
 import ManagerLeave from '../ManagerComponent/ManagerLeave';
 import ManagerAttendance from '../ManagerComponent/ManagerAttendance'
 import ManagerExpense from '../ManagerComponent/ManagerExpense';
-import ManagerAlert from '../ManagerComponent/ManagerAlert';
+import ManagerAlert from '../ManagerComponent/ManagerAlert/ManagerAlert';
 import ManagerHeader from './Headers/ManagerHeader';
 import HRDashboard from '../HRComponent/MainHrComponent/Dashboard/HRDashboard/HRDashboard';
 import HRAttendance from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAttendance';

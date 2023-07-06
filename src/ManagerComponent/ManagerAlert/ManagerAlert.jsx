@@ -1,26 +1,16 @@
-import ManagerHeader from "../Component/Headers/ManagerHeader";
+import ManagerHeader from "../../Component/Headers/ManagerHeader";
 import React from "react";
+import AlertToggleBtn from "./AlertToggleBtn";
+import AlertSlideDown from "./AlertSlideDown";
+import AlertToolbar from "./AlertToolbar";
+import Footer from "../../Component/Footer/Footer";
+import ManagerSideBar from "../../Component/SideBar/ManagerSideBar";
 const ManagerAlert =()=>{
     const design =(
 <>
-  <meta charSet="utf-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content="" />
-  <meta name="keyword" content="" />
-  <title>:: HRIS :: Alerts</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" /> {/* Favicon*/}
-  {/* plugin css file  */}
-  <link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
-  <link rel="stylesheet" href="assets/css/dataTables.min.css" />
-  {/* project css file  */}
-  <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
-  {/* start: sidebar */}
-  <div w3-include-html="include/mngr_sidebar.html" />
+  <div>
+    <ManagerSideBar/>
+    </div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll", overflowX: "hidden" }}>
     {/* start: page header */}
@@ -28,140 +18,26 @@ const ManagerAlert =()=>{
       <div className="container-fluid">
         <nav className="navbar">
           {/* start: toggle btnh */}
-          <div className="d-flex">
-            <button
-              type="button"
-              className="btn btn-link d-none d-xl-block sidebar-mini-btn p-0 text-primary"
-            >
-              <span className="hamburger-icon">
-                <span className="line" />
-                <span className="line" />
-                <span className="line" />
-              </span>
-            </button>
-            <a
-              href="#"
-              className="brand-icon d-flex align-items-center mx-2 mx-sm-3 text-primary"
-            />
-            <button
-              type="button"
-              className="btn btn-link d-block d-xl-none menu-toggle p-0 text-primary"
-            >
-              <span className="hamburger-icon">
-                <span className="line" />
-                <span className="line" />
-                <span className="line" />
-              </span>
-            </button>
-            <a
-              href="#"
-              className="brand-icon d-flex align-items-center mx-2 mx-sm-3 text-primary"
-            >
-              <img
-                src="assets/images/logo/logo.png"
-                alt="Mynd"
-                style={{ height: 40 }}
-              />
-            </a>
-          </div>
+        <AlertToggleBtn/>
           <div className="main-search px-3 flex-fill">
             <input
               className="form-control cntrl"
               type="text"
               placeholder="Search employee"
             />
-            <div className="card shadow rounded-4 search-result slidedown">
-              <div className="card-body">
-                <small className="text-uppercase text-muted">
-                  Recent searches
-                </small>
-                <div className="d-flex flex-wrap align-items-start mt-2 mb-4">
-                  <a
-                    className="small rounded py-1 px-2 m-1 fw-normal bg-primary text-white"
-                    href="#"
-                  >
-                    Shefali Jain
-                  </a>
-                  <a
-                    className="small rounded py-1 px-2 m-1 fw-normal bg-secondary text-white"
-                    href="#"
-                  >
-                    Raunak Sharma
-                  </a>
-                  <a
-                    className="small rounded py-1 px-2 m-1 fw-normal bg-info text-white"
-                    href="#"
-                  >
-                    Rohit Kumar
-                  </a>
-                  <a
-                    className="small rounded py-1 px-2 m-1 fw-normal bg-dark text-white"
-                    href="#"
-                  >
-                    Kevin Gill
-                  </a>
-                  <a
-                    className="small rounded py-1 px-2 m-1 fw-normal bg-danger text-white"
-                    href="#"
-                  >
-                    Shubham Gill
-                  </a>
-                </div>
-                <small className="text-uppercase text-muted">Suggestions</small>
-                <div className="card list-group list-group-flush list-group-custom mt-2">
-                  <a
-                    className="list-group-item list-group-item-action text-truncate"
-                    href="#"
-                  >
-                    <div className="fw-bold">Mark Anthony</div>
-                    <small className="text-muted">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </small>
-                  </a>
-                  <a
-                    className="list-group-item list-group-item-action text-truncate"
-                    href="#"
-                  >
-                    <div className="fw-bold">Sakshi Gaur</div>
-                    <small className="text-muted">
-                      There are many variations of passages of Lorem Ipsum
-                      available
-                    </small>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+            <AlertSlideDown/>
+           </div>
           {/* start: search area */}
           {/* <div class="header-left flex-grow-1"> */}
-          <div w3-include-html={<ManagerHeader/>}/>
+          <div>
+            <ManagerHeader/>
+          </div>
           {/* </div> */}
         </nav>
       </div>
     </header>
     {/* start: page toolbar */}
-    <div className="page-toolbar px-xl-4 px-sm-2 px-0 pt-3">
-      <div className="container-fluid">
-        <div className="row mb-3 align-items-center">
-          <div className="col">
-            <ol className="breadcrumb bg-transparent mb-0">
-              <li className="breadcrumb-item">
-                <a className="text-secondary" href="index.html">
-                  Home
-                </a>
-              </li>
-              <li className="breadcrumb-item active" aria-current="page">
-                <a className="text-secondary" href="mngr_alerts.html">
-                  Alerts
-                </a>
-              </li>
-            </ol>
-          </div>
-        </div>{" "}
-        {/* .row end */}
-      </div>
-    </div>
+ <AlertToolbar/>
     {/* start: page body */}
     <div className="page-body px-xl-4 px-sm-2 px-0 py-lg-2 py-1 mt-3">
       <div className="container-fluid">
@@ -1373,7 +1249,9 @@ const ManagerAlert =()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html="include/footer.html" />
+    <div>
+      <Footer/>
+      </div>
   </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}

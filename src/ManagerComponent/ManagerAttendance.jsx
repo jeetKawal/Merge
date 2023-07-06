@@ -1,5 +1,7 @@
 import React from "react";
 import ManagerHeader from "../Component/Headers/ManagerHeader";
+import Footer from "../Component/Footer/Footer";
+import ManagerSideBar from "../Component/SideBar/ManagerSideBar";
 
 const ManagerAttendance =() =>{
     const design =(
@@ -21,7 +23,9 @@ const ManagerAttendance =() =>{
   <link rel="stylesheet" href="assets/css/luno.style.min.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
   {/* start: sidebar */}
-  <div w3-include-html="include/mngr_sidebar.html" />
+  <div>
+    <ManagerSideBar/>
+    </div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll" }}>
     {/* start: page header */}
@@ -139,7 +143,9 @@ const ManagerAttendance =() =>{
             </div>
           </div>
           {/* start: search area */}
-          <div w3-include-html={<ManagerHeader/>} />
+          <div>
+            <ManagerHeader/>
+            </div>
         </nav>
       </div>
     </header>
@@ -1103,7 +1109,9 @@ const ManagerAttendance =() =>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html="include/footer.html" />
+    <div>
+      <Footer/>
+      </div>
   </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}

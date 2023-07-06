@@ -10,12 +10,16 @@ import ManagerDashboardExpense from "./Card/ManangerDashboardExpense";
 import ManagerDashboardLeaves from "./Card/ManagerDashboardLeaves";
 import ManagerDashboardLeaveStatus from "./Card/ManangerDashboardLeaveStatus";
 import ManagerDashboardAlerts from "./Card/ManagerDashboardAlerts";
+import ManagerHeader from "../../Component/Headers/ManagerHeader";
+import ManagerSideBar from "../../Component/SideBar/ManagerSideBar";
 const ManagerDashboard=()=>{
     const design= (
         <>
 
   {/* start: sidebar */}
-  <div w3-include-html="include/mngr_sidebar.html" />
+<div>
+  <ManagerSideBar/>
+</div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll", overflowX: "hidden" }}>
     {/* start: page header */}
@@ -33,7 +37,9 @@ const ManagerDashboard=()=>{
            <ManagerDashboardSlideDown/>
           </div>
           {/* start: search area */}
-          <div w3-include-html={<Header/>} />
+          <div>
+            <ManagerHeader/>
+          </div>
         </nav>
       </div>
     </header>
@@ -196,8 +202,10 @@ const ManagerDashboard=()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html={<Footer/>} />
-  </div>
+    <div>
+      <Footer/>
+      </div>
+      </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}
   {/* Jquery Page Js */}
