@@ -4,12 +4,12 @@ import Header from "../../Component/Headers/Header";
 import ManagerDashboardToggleBtn from "./ManagerDashoardToggleBtn";
 import ManagerDashboardSlideDown from "./ManagerDashboardSlideDown";
 import ManagerDashboardToolbar from "./ManagerDashboardToolbar";
-import Managercard from "./ManagerCard";
-import ManagerPunctuality from "./ManagerPunctuality";
-import ManagerDashboardExpense from "./ManangerDashboardExpense";
-import ManagerDashboardLeaves from "./ManagerDashboardLeaves";
-import ManagerDashboardLeaveStatus from "./ManangerDashboardLeaveStatus";
-import ManagerDashboardAlerts from "./ManagerDashboardAlerts";
+import Managercard from "./Card/ManagerCard";
+import ManagerPunctuality from "./Card/ManagerPunctuality";
+import ManagerDashboardExpense from "./Card/ManangerDashboardExpense";
+import ManagerDashboardLeaves from "./Card/ManagerDashboardLeaves";
+import ManagerDashboardLeaveStatus from "./Card/ManangerDashboardLeaveStatus";
+import ManagerDashboardAlerts from "./Card/ManagerDashboardAlerts";
 const ManagerDashboard=()=>{
     const design= (
         <>
