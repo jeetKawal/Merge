@@ -22,6 +22,9 @@ import HRLeaves from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HR
 import HRAlerts from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts";
 import Profiledetails from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails";
 import Header from "../Component/Headers/Header";
+import ManagerCalender from "../ManagerComponent/ManagerCalender/ManagerCalender";
+import ManagerDirectory from "../ManagerComponent/ManagerDirectory/ManagerDirectory";
+import ManagerSeparation from "../ManagerComponent/ManagerSeparation/ManagerSeparation";
 
 const PageRotuing =()=>{
     const design =(
@@ -38,12 +41,19 @@ const PageRotuing =()=>{
       <Route path="/forgotpassword" component={ForgotPassword}/>
       <Route path="/auto_two_step" component={Auto_two_step}/>
       <Route path="/auto_two_step#" component={Auto_two_step}/>
+      <Route path="/header" component={Header}/>
+
+      {/* Manager Routes*/}
       <Route path="/managerdashboard" component={ManagerDashboard}/>
       <Route path="/managerleave" component={ManagerLeave}/>
       <Route path="/managerattendance" component={ManagerAttendance}/>
       <Route path="/managerexpense" component={ManagerExpense}/>
       <Route path="/manageralert" component={ManagerAlert}/>
-      <Route path="/header" component={Header}/>
+      <Route path="/managercalender" component={ManagerCalender}/>
+      <Route path="/managerdirectory" component={ManagerDirectory}/>
+      <Route path="/managerseparation" component={ManagerSeparation}/>
+      
+     
 
 
 
