@@ -4,16 +4,19 @@ import PageToolbar from "./PageToolbar";
 import Cards from "./Cards/Cards";
 import PunctualityExpense from "./Cards/PunctualityExpense";
 import LeavesAlerts from "./Cards/LeavesAlerts";
-
+import Footer from "../../../../Component/Footer/Footer";
+import HrSideBar from "../../../../Component/SideBar/HrSideBar"
 const HRDashboard=()=>{
     return(
         <>
         
   
   {/* start: sidebar */}
-  <div w3-include-html="include/hr_sidebar.html" />
+  <div>
+    <HrSideBar/>
+    </div>
   {/* start: body area */}
-  ` <div className="wrapper" style={{ overflowY: "scroll", overflowX: "hidden" }}>
+   <div className="wrapper" style={{ overflowY: "scroll", overflowX: "hidden" }}>
     {/* start: page header */}
     <HRHeader/>
     {/* start: page toolbar */}
@@ -152,7 +155,10 @@ const HRDashboard=()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html="include/footer.html" />
+    {/* <div w3-include-html="include/footer.html" /> */}
+    <div>
+      <Footer/>
+    </div>
   </div>
 </>
 

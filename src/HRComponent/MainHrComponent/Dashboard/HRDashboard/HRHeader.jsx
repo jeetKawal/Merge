@@ -1,5 +1,6 @@
 import React from "react";
 import ToggleButton from "./ToggleButton";
+import Header from "../../../../Component/Headers/Header";
 
 const HRHeader=()=>{
     return(
@@ -84,7 +85,9 @@ const HRHeader=()=>{
             </div>
           </div>
           {/* start: search area */}
-          <div w3-include-html="include/hr_header.html" />
+          <div>
+            <Header/>
+          </div>
         </nav>
       </div>
     </header>
