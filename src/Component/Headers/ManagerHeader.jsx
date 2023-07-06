@@ -168,12 +168,12 @@ const ManagerHeader =()=>{
             <div className="list-group m-2 mb-3">
               <a
                 className="list-group-item list-group-item-action border-0"
-                href="profile_detailed.html"
+                href="/profile_detailed"
               >
                 <i className="w30 fa fa-user" />
                 Profile
               </a>
-              {/* <a class="list-group-item list-group-item-action border-0" href="profile_detailed.html"><i class="w30 fa fa-user"></i>Change</a> */}
+              {/* <a class="list-group-item list-group-item-action border-0" href="profile_detailed"><i class="w30 fa fa-user"></i>Change</a> */}
               <a
                 className="list-group-item list-group-item-action border-0"
                 href="login.html"

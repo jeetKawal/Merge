@@ -2,13 +2,13 @@ import React from 'react';
 import Login from '../Login/Login';
 import SignUp from '../SignUp/SignUp';
 import Error from './Error';
-import ForgotPassword from '../ForgotPassword/ForgotPassword';
-import Auto_two_step from '../AutoTwoStepVerification/Auto_two_step';
+import ForgotPassword from '../Login/ForgotPassword/ForgotPassword';
+import Auto_two_step from '../Login/AutoTwoStepVerification/Auto_two_step';
 import ManagerDashboard from '../ManagerComponent/ManagerDashboard/ManagerDashboard';
 import ManagerLeave from '../ManagerComponent/ManagerLeave';
 import ManagerAttendance from '../ManagerComponent/ManagerAttendance'
 import ManagerExpense from '../ManagerComponent/ManagerExpense';
-import ManagerAlert from '../ManagerComponent/ManagerAlert';
+import ManagerAlert from '../ManagerComponent/ManagerAlert/ManagerAlert';
 import ManagerHeader from './Headers/ManagerHeader';
 import HRDashboard from '../HRComponent/MainHrComponent/Dashboard/HRDashboard/HRDashboard';
 import HRAttendance from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAttendance';

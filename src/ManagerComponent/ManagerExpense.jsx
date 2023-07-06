@@ -1,28 +1,15 @@
 import React from "react";
 import Footer from "../Component/Footer/Footer";
 import ManagerHeader from "../Component/Headers/ManagerHeader";
+import ManagerSideBar from "../Component/SideBar/ManagerSideBar";
 
 const ManagerExpense =()=>{
     const design =(
         <>
-  <meta charSet="utf-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content="" />
-  <meta name="keyword" content="" />
-  <title>:: HRIS :: Expenses</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" /> {/* Favicon*/}
-  {/* plugin css file  */}
-  <link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
-  <link rel="stylesheet" href="assets/css/dataTables.min.css" />
-  {/* project css file  */}
-  <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
   {/* start: sidebar */}
-  <div w3-include-html="include/mngr_sidebar.html" />
+  <div>
+    <ManagerSideBar/>
+    </div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll" }}>
     {/* start: page header */}
@@ -140,7 +127,9 @@ const ManagerExpense =()=>{
             </div>
           </div>
           {/* start: search area */}
-          <div w3-include-html={<ManagerHeader/>} />
+          <div>
+            <ManagerHeader/>
+            </div>
         </nav>
       </div>
     </header>
@@ -969,7 +958,9 @@ const ManagerExpense =()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html={<Footer/>}/>
+    <div>
+      <Footer/>
+      </div>
   </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}
