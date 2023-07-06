@@ -1,5 +1,5 @@
 import ManagerHeader from "../Component/Headers/ManagerHeader";
-
+import React from "react";
 const ManagerAlert =()=>{
     const design =(
 <>

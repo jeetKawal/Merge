@@ -1,3 +1,4 @@
+import React from "react";
 const ManagerLeave=()=>{
     const design =(<>
         <meta charSet="utf-8" />
