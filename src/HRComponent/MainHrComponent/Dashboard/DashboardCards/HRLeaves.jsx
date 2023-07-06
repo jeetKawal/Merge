@@ -1,4 +1,7 @@
 import React from "react";
+import Footer from "../../../../Component/Footer/Footer";
+import HrHeader from "../../../../Component/Headers/HrHeader";
+import HrSideBar from "../../../../Component/SideBar/HrSideBar";
 const HRLeaves=()=>{
     return(
         <>
@@ -8,19 +11,9 @@ const HRLeaves=()=>{
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
-  <meta name="description" content="" />
-  <meta name="keyword" content="" />
-  <title>:: HRIS :: Leaves</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" /> {/* Favicon*/}
-  {/* plugin css file  */}
-  <link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
-  <link rel="stylesheet" href="assets/css/dataTables.min.css" />
-  {/* project css file  */}
-  <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
-  {/* start: sidebar */}
-  <div w3-include-html="include/hr_sidebar.html" />
-  {/* start: body area */}
+ 
+ <div>
+  <HrSideBar/></div>  {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll" }}>
     {/* start: page header */}
     <header className="page-header sticky-top px-xl-4 px-sm-2 px-0 py-lg-2 py-1">
@@ -137,7 +130,9 @@ const HRLeaves=()=>{
             </div>
           </div>
           {/* start: search area */}
-          <div w3-include-html="include/hr_header.html" />
+          <div>
+            <HrHeader/>
+          </div>
         </nav>
       </div>
     </header>
@@ -1168,7 +1163,9 @@ const HRLeaves=()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html="include/footer.html" />
+    <div>
+      <Footer/>
+    </div>
   </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}

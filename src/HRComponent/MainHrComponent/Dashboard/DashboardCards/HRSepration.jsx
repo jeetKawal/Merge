@@ -1,26 +1,15 @@
 import React from "react";
+import HrSideBar from "../../../../Component/SideBar/HrSideBar";
+import HrHeader from "../../../../Component/Headers/HrHeader";
+import Footer from "../../../../Component/Footer/Footer";
 
 const HRSepration=()=>{
     return(
         <>
-  <meta charSet="utf-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content="" />
-  <meta name="keyword" content="" />
-  <title>:: HRIS :: Separation</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" /> {/* Favicon*/}
-  {/* plugin css file  */}
-  <link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
-  <link rel="stylesheet" href="assets/css/dataTables.min.css" />
-  {/* project css file  */}
-  <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
   {/* start: sidebar */}
-  <div w3-include-html="include/hr_sidebar.html" />
+  <div>
+    <HrSideBar/>
+  </div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll" }}>
     {/* start: page header */}
@@ -138,7 +127,9 @@ const HRSepration=()=>{
             </div>
           </div>
           {/* start: search area */}
-          <div w3-include-html="include/hr_header.html" />
+          <div >
+            <HrHeader/>
+          </div>
         </nav>
       </div>
     </header>
@@ -1320,7 +1311,9 @@ const HRSepration=()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html="include/footer.html" />
+    <div>
+      <Footer/>
+    </div>
   </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}

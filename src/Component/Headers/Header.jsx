@@ -1,5 +1,6 @@
 import HeaderDropDownMenu from "./HeaderDropDownMenu";
 import HeaderProfile from "./HeaderProfile";
+import HeaderDropDown from "./HeaderDropDown";
 
 import React from "react";
 const Header =()=>{
@@ -12,7 +13,7 @@ const Header =()=>{
    <HeaderDropDownMenu/>
     </li>
     <li className="d-none d-xl-inline-block col-lg-4">
-   <HeaderDropDownMenu/>
+   <HeaderDropDown/>
     </li>
     <li>
     <HeaderProfile/>
