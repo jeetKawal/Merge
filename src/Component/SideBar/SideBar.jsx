@@ -1,3 +1,4 @@
+import React from "react";
 const SideBar =()=>{
     const design =(
         <div className="sidebar p-2 py-md-3 sidebar-mini">
