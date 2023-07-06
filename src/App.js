@@ -1,9 +1,14 @@
 import React from "react";
+import PageRotuing from "./Routes/PageRouting";
+import PageRouting from "./Routes/PageRouting";
+
 
 function App() {
   return (
    <>
-<div>Hello</div>
+<PageRotuing/>
+
+   
    </>
   );
 }
