@@ -1,6 +1,6 @@
 import React from "react";
 import ToggleButton from "./ToggleButton";
-import Header from "../../../../Component/Headers/Header";
+import HrHeader from "../../../../Component/Headers/HrHeader";
 
 const HRHeader=()=>{
     return(
@@ -86,7 +86,7 @@ const HRHeader=()=>{
           </div>
           {/* start: search area */}
           <div>
-            <Header/>
+            <HrHeader/>
           </div>
         </nav>
       </div>
