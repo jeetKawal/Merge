@@ -4,8 +4,7 @@ import SignUp from "../SignUp/SignUp";
 import Login from "../Login/Login";
 import ForgotPassword from "../Login/ForgotPassword/ForgotPassword";
 
-import Auto_two_step from "../Login/AutoTwoStepVerification/Auto_two_step
-";
+import Auto_two_step from "../Login/AutoTwoStepVerification/Auto_two_step";
 import{Routes,Route}from "react-router-dom";
 import MainContent from "../Component/MainContent";
 import ManagerDashboard from "../ManagerComponent/ManagerDashboard/ManagerDashboard";
