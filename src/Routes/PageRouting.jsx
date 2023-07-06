@@ -22,13 +22,19 @@ import HRLeaves from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HR
 import HRAlerts from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts";
 import Profiledetails from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails";
 import Header from "../Component/Headers/Header";
+import Footer from "../Component/Footer/Footer";
 
-const PageRouting =()=>{
+const PageRotuing =()=>{
     const design =(
         <>
+     
+
 <MainContent/>
 <Routes>
-      <Route exact path="/login" component={Login} />
+    
+</Routes>
+<Routes>
+<Route exact path="/login" component={Login} />
       <Route path="/signup" component={SignUp} /> 
       <Route path="/forgotpassword" component={ForgotPassword}/>
       <Route path="/auto_two_step" component={Auto_two_step}/>
@@ -56,8 +62,10 @@ const PageRouting =()=>{
 
 
       </Routes>
+     {/* <Footer/> */}
+
       </>
     );
     return design;
 }
-export default PageRouting;
+export default PageRotuing;
