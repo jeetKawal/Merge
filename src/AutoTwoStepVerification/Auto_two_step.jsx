@@ -1,9 +1,8 @@
 import React from "react";
-import LoginForm from "./LoginForm";
-const Login = () =>{
-    const design =(
-        <>
-  {/* start: body area */}
+import AutoTwoStepForm from "./AutoTwoStepForm";
+const Auto_two_step =()=>{
+const design = (
+<>
   <div className="wrapper">
     {/* start: page body */}
     <div className="page-body auth px-xl-4 px-sm-2 px-0 py-lg-2 py-1">
@@ -24,7 +23,7 @@ const Login = () =>{
               style={{ maxWidth: "32rem" }}
             >
               {/* Form */}
-              <LoginForm/>
+             <AutoTwoStepForm/>
               {/* End Form */}
             </div>
           </div>
@@ -35,7 +34,9 @@ const Login = () =>{
   </div>
   {/* Jquery Core Js */}
 </>
-    );
-    return design;
+
+);
+return design;
+
 }
-export default Login;
+export default Auto_two_step;
