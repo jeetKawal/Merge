@@ -69,7 +69,7 @@ const ManagerSideBar =()=>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="mngr_calendar.html">
+          <a className="m-link" href="/managercalender">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={20}
@@ -137,7 +137,7 @@ const ManagerSideBar =()=>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="mngr_directory.html">
+          <a className="m-link" href="/managerdirectory">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}
@@ -182,7 +182,7 @@ const ManagerSideBar =()=>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="mngr_separation.html">
+          <a className="m-link" href="/managerseparation">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}
