@@ -99,7 +99,7 @@ const HrHeader =() =>{
             </div>
           </div>
           <a
-            href="mngr_alerts.html"
+            href="/hr_alerts"
             className="btn btn-primary text-light rounded-0"
           >
             View all alerts
@@ -141,7 +141,7 @@ const HrHeader =() =>{
           <div className="list-group m-2 mb-3">
             <a
               className="list-group-item list-group-item-action border-0"
-              href="profile_detailed.html"
+              href="/profile_detailed"
             >
               <i className="w30 fa fa-user" />
               Profile

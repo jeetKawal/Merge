@@ -19,6 +19,8 @@ import HRLeaves from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HR
 import HRAlerts from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts';
 import Profiledetails from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails';
 import Header from './Headers/Header';
+import HRCalendar from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRCalender';
+import HRDirectory from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRDirectory';
 
 const MainContent = () => {
   const path = window.location.pathname;
@@ -79,6 +81,12 @@ const MainContent = () => {
   }
   else if (path === '/header'){
     return <Header/>
+  }
+  else if (path === '/hr_calender'){
+    return <HRCalendar/>
+  }
+  else if (path === '/hr_directory'){
+    return <HRDirectory/>
   }
   else {
     return <Error/>;

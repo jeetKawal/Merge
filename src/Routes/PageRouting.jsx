@@ -22,6 +22,8 @@ import HRLeaves from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HR
 import HRAlerts from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts";
 import Profiledetails from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails";
 import Header from "../Component/Headers/Header";
+import HRCalendar from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRCalender";
+import HRDirectory from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRDirectory";
 
 const PageRotuing =()=>{
     const design =(
@@ -55,6 +57,8 @@ const PageRotuing =()=>{
       <Route path="/hr_expense" component={HRExpenses}/>
       <Route path="/hr_leaves" component={HRLeaves}/>
       <Route path="/hr_alerts" component={HRAlerts}/>
+      <Route path="/hr_calender" component={HRCalendar}/>
+      <Route path="/hr_directory" component={HRDirectory}/>
       <Route path="/profile_detailed" component={Profiledetails}/>
 
       

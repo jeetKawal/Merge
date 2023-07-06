@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "../../../../../Component/Headers/Header"
 import Footer from "../../../../../Component/Footer/Footer";
+import SideBar from "../../../../../Component/SideBar/SideBar";
 
 const Profiledetails=()=>{
     return(
         <>
   {/* start: sidebar */}
-  <div w3-include-html="include/sidebar.html" />
+ <div><SideBar/></div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll" }}>
     {/* start: page header */}
