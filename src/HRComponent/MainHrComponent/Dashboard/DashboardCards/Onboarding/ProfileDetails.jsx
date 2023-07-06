@@ -1,24 +1,10 @@
 import React from "react";
+import Header from "../../../../../Component/Headers/Header"
+import Footer from "../../../../../Component/Footer/Footer";
 
 const Profiledetails=()=>{
     return(
         <>
-  <meta charSet="utf-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=Edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content="" />
-  <meta name="keyword" content="" />
-  <title>:: HRIS :: profile</title>
-  <link rel="icon" href="favicon.ico" alt="Mynd" /> {/* Favicon*/}
-  {/* plugin css file  */}
-  <link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
-  <link rel="stylesheet" href="assets/css/dataTables.min.css" />
-  {/* project css file  */}
-  <link rel="stylesheet" href="assets/css/luno.style.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css" />
   {/* start: sidebar */}
   <div w3-include-html="include/sidebar.html" />
   {/* start: body area */}
@@ -139,7 +125,9 @@ const Profiledetails=()=>{
           </div>
           {/* start: search area */}
           {/* <div class="header-left flex-grow-1"> */}
-          <div w3-include-html="include/header.html" />
+          <div>
+            <Header/>
+            </div>
           {/* </div> */}
         </nav>
       </div>
@@ -4529,7 +4517,9 @@ const Profiledetails=()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html="include/footer.html" />
+    <div >
+      <Footer/>
+    </div>
   </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}

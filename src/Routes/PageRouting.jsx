@@ -13,7 +13,7 @@ import ManagerAttendance from "../ManagerComponent/ManagerAttendance";
 import ManagerExpense from "../ManagerComponent/ManagerExpense";
 import ManagerAlert from "../ManagerComponent/ManagerAlert/ManagerAlert";
 
-import HRDashboard from "../HRComponent/MainHrComponent/Dashboard/HRDashboard";
+import HRDashboard from "../HRComponent/MainHrComponent/Dashboard/HRDashboard/HRDashboard";
 import HRAttendance from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAttendance";
 import HREmployeeStatus from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/HREmployeeStatus";
 import HRSepration from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRSepration";
@@ -22,13 +22,20 @@ import HRLeaves from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HR
 import HRAlerts from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts";
 import Profiledetails from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails";
 import Header from "../Component/Headers/Header";
+import Header from "../Component/Headers/Header";
+import Footer from "../Component/Footer/Footer";
 
-const PageRouting =()=>{
+const PageRotuing =()=>{
     const design =(
         <>
+     
+
 <MainContent/>
 <Routes>
-      <Route exact path="/login" component={Login} />
+    
+</Routes>
+<Routes>
+<Route exact path="/login" component={Login} />
       <Route path="/signup" component={SignUp} /> 
       <Route path="/forgotpassword" component={ForgotPassword}/>
       <Route path="/auto_two_step" component={Auto_two_step}/>
@@ -38,6 +45,8 @@ const PageRouting =()=>{
       <Route path="/managerattendance" component={ManagerAttendance}/>
       <Route path="/managerexpense" component={ManagerExpense}/>
       <Route path="/manageralert" component={ManagerAlert}/>
+      <Route path="/header" component={Header}/>
+
 
 
       {/* HR Routes */}
@@ -54,8 +63,10 @@ const PageRouting =()=>{
 
 
       </Routes>
+     {/* <Footer/> */}
+
       </>
     );
     return design;
 }
-export default PageRouting;
+export default PageRotuing;
