@@ -19,6 +19,9 @@ import HRLeaves from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HR
 import HRAlerts from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts';
 import Profiledetails from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails';
 import Header from './Headers/Header';
+import ManagerCalender from '../ManagerComponent/ManagerCalender/ManagerCalender';
+import ManagerDirectory from '../ManagerComponent/ManagerDirectory/ManagerDirectory';
+import ManagerSeparation from '../ManagerComponent/ManagerSeparation/ManagerSeparation';
 import HRCalendar from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRCalender';
 import HRDirectory from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRDirectory';
 
@@ -54,6 +57,15 @@ const MainContent = () => {
   }
   else if (path === '/manageralert') {
     return <ManagerAlert/>;
+  }
+  else if (path === '/managercalender') {
+    return <ManagerCalender/>;
+  }
+  else if (path === '/managerdirectory') {
+    return <ManagerDirectory/>;
+  }
+  else if (path === '/managerseparation') {
+    return <ManagerSeparation/>;
   }
   else if (path === '/hr_dashboard'){
     return <HRDashboard/>
