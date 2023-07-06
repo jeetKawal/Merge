@@ -22,8 +22,6 @@ import HRLeaves from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HR
 import HRAlerts from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRAlerts";
 import Profiledetails from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/Onboarding/ProfileDetails";
 import Header from "../Component/Headers/Header";
-import Header from "../Component/Headers/Header";
-import Footer from "../Component/Footer/Footer";
 
 const PageRotuing =()=>{
     const design =(

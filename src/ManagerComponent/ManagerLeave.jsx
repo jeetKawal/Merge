@@ -1,4 +1,7 @@
 import React from "react";
+import ManagerSideBar from "../Component/SideBar/ManagerSideBar";
+import ManagerHeader from "../Component/Headers/ManagerHeader";
+import Footer from "../Component/Footer/Footer";
 const ManagerLeave=()=>{
     const design =(<>
         <meta charSet="utf-8" />
@@ -18,7 +21,9 @@ const ManagerLeave=()=>{
         <link rel="stylesheet" href="assets/css/luno.style.min.css" />
         <link rel="stylesheet" href="assets/css/custom.css" />
         {/* start: sidebar */}
-        <div w3-include-html="include/mngr_sidebar.html" />
+        <div>
+          <ManagerSideBar/>
+          </div>
         {/* start: body area */}
         <div className="wrapper" style={{ overflowY: "scroll" }}>
           {/* start: page header */}
@@ -136,7 +141,9 @@ const ManagerLeave=()=>{
                   </div>
                 </div>
                 {/* start: search area */}
-                <div w3-include-html="include/mngr_header.html" />
+                <div>
+                  <ManagerHeader/>
+                  </div>
                 {/* </div> */}
               </nav>
             </div>
@@ -1168,7 +1175,9 @@ const ManagerLeave=()=>{
             </div>
           </div>
           {/* start: page footer */}
-          <div w3-include-html="include/footer.html" />
+          <div>
+            <Footer/>
+            </div>
         </div>
         {/* Jquery Core Js */}
         {/* Plugin Js */}

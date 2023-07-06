@@ -1,12 +1,15 @@
 import React from "react";
 import Footer from "../Component/Footer/Footer";
 import ManagerHeader from "../Component/Headers/ManagerHeader";
+import ManagerSideBar from "../Component/SideBar/ManagerSideBar";
 
 const ManagerExpense =()=>{
     const design =(
         <>
   {/* start: sidebar */}
-  <div w3-include-html="include/mngr_sidebar.html" />
+  <div>
+    <ManagerSideBar/>
+    </div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll" }}>
     {/* start: page header */}
@@ -124,7 +127,9 @@ const ManagerExpense =()=>{
             </div>
           </div>
           {/* start: search area */}
-          <div w3-include-html={<ManagerHeader/>} />
+          <div>
+            <ManagerHeader/>
+            </div>
         </nav>
       </div>
     </header>
@@ -953,7 +958,9 @@ const ManagerExpense =()=>{
       </div>
     </div>
     {/* start: page footer */}
-    <div w3-include-html={<Footer/>}/>
+    <div>
+      <Footer/>
+      </div>
   </div>
   {/* Jquery Core Js */}
   {/* Plugin Js */}

@@ -4,10 +4,13 @@ import AlertToggleBtn from "./AlertToggleBtn";
 import AlertSlideDown from "./AlertSlideDown";
 import AlertToolbar from "./AlertToolbar";
 import Footer from "../../Component/Footer/Footer";
+import ManagerSideBar from "../../Component/SideBar/ManagerSideBar";
 const ManagerAlert =()=>{
     const design =(
 <>
-  <div w3-include-html="include/mngr_sidebar.html" />
+  <div>
+    <ManagerSideBar/>
+    </div>
   {/* start: body area */}
   <div className="wrapper" style={{ overflowY: "scroll", overflowX: "hidden" }}>
     {/* start: page header */}
