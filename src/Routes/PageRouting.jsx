@@ -27,6 +27,11 @@ import ManagerDirectory from "../ManagerComponent/ManagerDirectory/ManagerDirect
 import ManagerSeparation from "../ManagerComponent/ManagerSeparation/ManagerSeparation";
 import HRCalendar from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRCalender";
 import HRDirectory from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRDirectory";
+import AlertAttendance from "../ManagerComponent/ManagerAlert/Card/AlertAttendance";
+import AlertExpense from "../ManagerComponent/ManagerAlert/Card/AlertExpense";
+import AlertSeparation from "../ManagerComponent/ManagerAlert/Card/AlertSeparation";
+import PrivacyPolicy from "../Component/Policy/PrivacyPolicy";
+import Faq from "../Component/Policy/Faq";
 
 const PageRotuing =()=>{
     const design =(
@@ -54,6 +59,17 @@ const PageRotuing =()=>{
       <Route path="/managercalender" component={ManagerCalender}/>
       <Route path="/managerdirectory" component={ManagerDirectory}/>
       <Route path="/managerseparation" component={ManagerSeparation}/>
+      <Route path="/manageralert/alertattendance" component={AlertAttendance}/>
+      <Route path="/manageralert/alertexpense" component={AlertExpense}/>
+      <Route path="/manageralert/alertseparation" component={AlertSeparation}/>
+
+
+
+
+      {/* Side bar  */}
+      <Route path="/privacy_policy" component={PrivacyPolicy}/>
+      <Route path="/faq" component={Faq}/>
+      
       
      
 

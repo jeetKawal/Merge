@@ -210,7 +210,7 @@ const ManagerSideBar =()=>{
       <div className="nav-item flex-fill p-2">
         <a
           className="d-inline-block w-100 color-400"
-          href="faq.html"
+          href="/faq"
           title="FAQ"
         >
           <svg
@@ -231,7 +231,7 @@ const ManagerSideBar =()=>{
       <div className="nav-item flex-fill p-2">
         <a
           className="d-inline-block w-100 color-400"
-          href="privacy_policy.html"
+          href="/privacy_policy"
           title="Privacy policy"
         >
           <svg
