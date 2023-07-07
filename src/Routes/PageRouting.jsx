@@ -25,6 +25,8 @@ import Header from "../Component/Headers/Header";
 import ManagerCalender from "../ManagerComponent/ManagerCalender/ManagerCalender";
 import ManagerDirectory from "../ManagerComponent/ManagerDirectory/ManagerDirectory";
 import ManagerSeparation from "../ManagerComponent/ManagerSeparation/ManagerSeparation";
+import HRCalendar from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRCalender";
+import HRDirectory from "../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRDirectory";
 import AlertAttendance from "../ManagerComponent/ManagerAlert/Card/AlertAttendance";
 import AlertExpense from "../ManagerComponent/ManagerAlert/Card/AlertExpense";
 import AlertSeparation from "../ManagerComponent/ManagerAlert/Card/AlertSeparation";
@@ -81,6 +83,8 @@ const PageRotuing =()=>{
       <Route path="/hr_expense" component={HRExpenses}/>
       <Route path="/hr_leaves" component={HRLeaves}/>
       <Route path="/hr_alerts" component={HRAlerts}/>
+      <Route path="/hr_calender" component={HRCalendar}/>
+      <Route path="/hr_directory" component={HRDirectory}/>
       <Route path="/profile_detailed" component={Profiledetails}/>
 
       

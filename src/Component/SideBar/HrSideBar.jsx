@@ -50,7 +50,7 @@ const HrSideBar = () =>{
       <ul className="menu-list">
         {/* <li class="divider py-2 lh-sm"><span class="small">MAIN</span><br> <small class="text-muted">Your functions </small></li> */}
         <li>
-          <a className="m-link" href="hr_dashboard.html">
+          <a className="m-link" href="/hr_dashboard">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}
@@ -73,7 +73,7 @@ const HrSideBar = () =>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="hr_emp_status.html">
+          <a className="m-link" href="/hr_emp_status">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}
@@ -96,7 +96,7 @@ const HrSideBar = () =>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="hr_calendar.html">
+          <a className="m-link" href="/hr_calender">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={20}
@@ -119,7 +119,7 @@ const HrSideBar = () =>{
           </a>
         </li>
         <li className="menu-item">
-          <a className="m-link" href="hr_leaves.html">
+          <a className="m-link" href="/hr_leaves">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={20}
@@ -142,7 +142,7 @@ const HrSideBar = () =>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="hr_attendance.html">
+          <a className="m-link" href="/hr_attendance">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={20}
@@ -164,7 +164,7 @@ const HrSideBar = () =>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="hr_directory.html">
+          <a className="m-link" href="/hr_directory">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}
@@ -186,7 +186,7 @@ const HrSideBar = () =>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="hr_expense.html">
+          <a className="m-link" href="/hr_expense">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}
@@ -208,7 +208,7 @@ const HrSideBar = () =>{
           </a>
         </li>
         <li>
-          <a className="m-link" href="hr_sep_dash.html">
+          <a className="m-link" href="/hr_sep_dash">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}

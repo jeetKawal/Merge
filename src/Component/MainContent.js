@@ -22,6 +22,8 @@ import Header from './Headers/Header';
 import ManagerCalender from '../ManagerComponent/ManagerCalender/ManagerCalender';
 import ManagerDirectory from '../ManagerComponent/ManagerDirectory/ManagerDirectory';
 import ManagerSeparation from '../ManagerComponent/ManagerSeparation/ManagerSeparation';
+import HRCalendar from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRCalender';
+import HRDirectory from '../HRComponent/MainHrComponent/Dashboard/DashboardCards/HRDirectory';
 import AlertAttendance from '../ManagerComponent/ManagerAlert/Card/AlertAttendance';
 import AlertExpense from '../ManagerComponent/ManagerAlert/Card/AlertExpense';
 import AlertSeparation from '../ManagerComponent/ManagerAlert/Card/AlertSeparation';
@@ -105,6 +107,12 @@ const MainContent = () => {
   }
   else if (path === '/header'){
     return <Header/>
+  }
+  else if (path === '/hr_calender'){
+    return <HRCalendar/>
+  }
+  else if (path === '/hr_directory'){
+    return <HRDirectory/>
   }
   else if (path === '/privacy_policy'){
     return <PrivacyPolicy/>

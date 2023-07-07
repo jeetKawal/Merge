@@ -42,7 +42,7 @@ const HeaderProfile =()=>{
               {/* <a class="list-group-item list-group-item-action border-0" href="/profile_detailed"><i class="w30 fa fa-user"></i>Change</a> */}
               <a
                 className="list-group-item list-group-item-action border-0"
-                href="login.html"
+                href="/login"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#change_pass"
               >
@@ -51,7 +51,7 @@ const HeaderProfile =()=>{
               </a>
             </div>
             <a
-              href="login.html"
+              href="/login"
               className="btn bg-secondary text-light text-uppercase rounded-0"
             >
               Sign out
