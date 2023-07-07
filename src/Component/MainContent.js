@@ -22,6 +22,11 @@ import Header from './Headers/Header';
 import ManagerCalender from '../ManagerComponent/ManagerCalender/ManagerCalender';
 import ManagerDirectory from '../ManagerComponent/ManagerDirectory/ManagerDirectory';
 import ManagerSeparation from '../ManagerComponent/ManagerSeparation/ManagerSeparation';
+import AlertAttendance from '../ManagerComponent/ManagerAlert/Card/AlertAttendance';
+import AlertExpense from '../ManagerComponent/ManagerAlert/Card/AlertExpense';
+import AlertSeparation from '../ManagerComponent/ManagerAlert/Card/AlertSeparation';
+import PrivacyPolicy from './Policy/PrivacyPolicy';
+import Faq from './Policy/Faq';
 
 const MainContent = () => {
   const path = window.location.pathname;
@@ -65,6 +70,15 @@ const MainContent = () => {
   else if (path === '/managerseparation') {
     return <ManagerSeparation/>;
   }
+  else if (path === '/manageralert/alertattendance') {
+    return <AlertAttendance/>;
+  }
+  else if (path === '/manageralert/alertexpense') {
+    return <AlertExpense/>;
+  }
+  else if (path === '/manageralert/alertseparation') {
+    return <AlertSeparation/>;
+  }
   else if (path === '/hr_dashboard'){
     return <HRDashboard/>
   }
@@ -91,6 +105,12 @@ const MainContent = () => {
   }
   else if (path === '/header'){
     return <Header/>
+  }
+  else if (path === '/privacy_policy'){
+    return <PrivacyPolicy/>
+  }
+  else if (path === '/faq'){
+    return <Faq/>
   }
   else {
     return <Error/>;

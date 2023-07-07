@@ -25,6 +25,11 @@ import Header from "../Component/Headers/Header";
 import ManagerCalender from "../ManagerComponent/ManagerCalender/ManagerCalender";
 import ManagerDirectory from "../ManagerComponent/ManagerDirectory/ManagerDirectory";
 import ManagerSeparation from "../ManagerComponent/ManagerSeparation/ManagerSeparation";
+import AlertAttendance from "../ManagerComponent/ManagerAlert/Card/AlertAttendance";
+import AlertExpense from "../ManagerComponent/ManagerAlert/Card/AlertExpense";
+import AlertSeparation from "../ManagerComponent/ManagerAlert/Card/AlertSeparation";
+import PrivacyPolicy from "../Component/Policy/PrivacyPolicy";
+import Faq from "../Component/Policy/Faq";
 
 const PageRotuing =()=>{
     const design =(
@@ -52,6 +57,17 @@ const PageRotuing =()=>{
       <Route path="/managercalender" component={ManagerCalender}/>
       <Route path="/managerdirectory" component={ManagerDirectory}/>
       <Route path="/managerseparation" component={ManagerSeparation}/>
+      <Route path="/manageralert/alertattendance" component={AlertAttendance}/>
+      <Route path="/manageralert/alertexpense" component={AlertExpense}/>
+      <Route path="/manageralert/alertseparation" component={AlertSeparation}/>
+
+
+
+
+      {/* Side bar  */}
+      <Route path="/privacy_policy" component={PrivacyPolicy}/>
+      <Route path="/faq" component={Faq}/>
+      
       
      
 
